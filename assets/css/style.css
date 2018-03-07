@@ -1,0 +1,19 @@
+.header {
+  background-color: black;
+  height: 30vh;
+}
+
+.under-header {
+  background-color: blue;
+  height: 25vh;
+}
+
+#bot2 {
+  width: 160%;
+  margin-top: -90%;
+  margin-left: 50%;
+  padding: 10%;
+  border: 5px white solid;
+  border-radius: 40%;
+  background-color: #363C3588;
+}
