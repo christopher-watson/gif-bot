@@ -7,30 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina|Bowlby+One+SC">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <link rel="icon" href="./assets/images/bot.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css" class="css">
 </head>
 
 <body>
-  <div class="jumbotron-fluid header"></div>
+  <div class="jumbotron-fluid header">
+    <p id="header-text">GIFbot</p>
+  </div>
   <div class="jumbotron-fluid under-header">
-    <div class="row px-3 top-row">
-      <div class="col-5">
-        <span id="botlink">
-          <img src="./assets/images/bot2.png" alt="Robot" id="bot2">
-        </span>
-        <form class="default" id="gif-form">
-          <input type="text" placeholder="Search.." id="gif-input">
-          <button type="submit" id="add-gif">
-            <i class="fa fa-search"></i>
-          </button>
-        </form>
-      </div>
-      <div class="col-7">
-        <div class="button-div">
-          <!-- Buttons Go Here -->
+    <div class="layer">
+      <div class="row px-3 top-row">
+        <div class="col-5">
+          <span id="botlink">
+            <img src="./assets/images/bot2.png" alt="Robot" id="bot2">
+          </span>
+          <form class="default" id="gif-form">
+            <input type="text" placeholder="Search.." id="gif-input">
+            <button type="submit" id="add-gif">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="col-7">
+          <div class="button-div">
+            <!-- Buttons Go Here -->
+          </div>
         </div>
       </div>
     </div>
@@ -38,9 +42,9 @@
   <div class="container-fluid gif-container">
     <!-- GIFs Go Here -->
   </div>
-
-
-
+  
+  
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
