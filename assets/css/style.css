@@ -1,3 +1,7 @@
+body{
+  background-color: #363C3588;
+}
+
 .header {
   background-color: black;
   height: 30vh;
@@ -8,8 +12,15 @@
   height: 25vh;
 }
 
-.button-area {
-  overflow: auto;
+.top-row{
+  position: relative;
+}
+.button-area{
+  margin-top: 1%;
+  margin-right: 2%;
+  height: 100%;
+  position: absolute;
+  overflow-y: scroll;
 }
 
 #bot2 {
@@ -21,6 +32,11 @@
   border-radius: 40%;
   background-color: #363C3588;
 }
+
+
+
+
+
 
 form.default input[type=text] {
   padding: 3px;
