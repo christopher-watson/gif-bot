@@ -14,15 +14,23 @@ body {
 
 .top-row {
   position: relative;
-  max-height: 200px;
 }
 
 .button-div {
+  padding: 5px;
+  color: white;
   margin-top: 2px;
   margin-right: 10px;
-  height: 100%;
   position: absolute;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+  max-height: 24vh;
+}
+
+.gif-button{
+  border: 2px solid #363C3588;
+  border-radius: 25px;
+  margin-right: 10px;
+  font-size: 20px;
 }
 
 #bot2 {
