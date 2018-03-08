@@ -33,6 +33,9 @@ body{
   background-color: #363C3588;
 }
 
+#botlink{
+  cursor: pointer;
+}
 
 
 
@@ -40,6 +43,7 @@ body{
 
 form.default input[type=text] {
   padding: 3px;
+  padding-left: 10px;
   margin-top: 5%;
   margin-left: 20%;
   border: 2px solid #363C3588;
@@ -63,3 +67,4 @@ form.example::after {
   clear: both;
   display: table;
 }
+
