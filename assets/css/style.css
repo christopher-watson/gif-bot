@@ -74,7 +74,8 @@ body {
 }
 
 #header-text{
-  color: white;
+  color: #FC0D1C;
+  opacity: .85;
   text-align: right;
   padding-right: 20px;
   position: absolute;
