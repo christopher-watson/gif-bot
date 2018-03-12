@@ -23,7 +23,7 @@ function displayGif() {
       var gifDiv = $("<div>");
       gifDiv.addClass("gif-div");
       var p = $("<p>");
-      p.text(results[i].title + ' "' + results[i].rating + '"');
+      p.text(results[i].title);
       var gifImage = $("<img>");
       gifImage.addClass("gif");
       gifImage.attr("src", results[i].images.fixed_width_still.url);
@@ -58,8 +58,10 @@ function createButton() {
 //Function to handle GIF buttons
 $("#add-gif").on("click", function(event) {
   event.preventDefault();
-  if ($("#gif-input").val() !== '') {
-    var gifInput = $("#gif-input").val().trim();
+  if ($("#gif-input").val() !== "") {
+    var gifInput = $("#gif-input")
+      .val()
+      .trim();
     $("#gif-input").val("");
     buttonArray.push(gifInput);
   }
@@ -81,7 +83,7 @@ function animate() {
 
 function robotInvasion() {
   var queryURL =
-    "https://api.giphy.com/v1/gifs/search?api_key=GqKuRbnmfbn5LwTnRvQ5T03JwiVXXF7y&q=robot+invasion";
+    "https://api.giphy.com/v1/gifs/search?api_key=GqKuRbnmfbn5LwTnRvQ5T03JwiVXXF7y&q=robot invasion";
 
   $.ajax({
     url: queryURL,
@@ -110,38 +112,12 @@ function robotInvasion() {
   });
 }
 
-function randomizer() {
-  gifCount += 6;
-}
-
-function clear() {
-  $(".gif-container").empty();
-  gifCount = 0;
-}
-
-function info() {
-  $.alert({
-    title: "INFO",
-    content:
-      "Click on button to display GIFs" +
-      "<br>" +
-      "Create your own button in search bar" +
-      "<br>" +
-      "Press the robot for a ... ?" +
-      "<br>",
-    theme: "modern",
-    // buttons: {
-    //   Done: function() {
-    //     //Be Done
-    //   }
-    // }
-  });
+function randomizer(){
+  gifCount+=6;
 }
 
 $(document).on("click", ".gif-button", displayGif);
 $(document).on("click", ".gif-button", randomizer);
 $(document).on("click", ".gif", animate);
-$("#header-text").on("click", clear);
 $("#botlink").on("click", robotInvasion);
-$("#info-button").on("click", info);
 createButton();

@@ -1,5 +1,14 @@
 body {
-  background-color: #010A1190;
+  background-color: #6C757C;
+}
+
+hr{
+  border-top: 3px solid #21768E;
+  border-radius: 25px;
+}
+
+p{
+  font-family: 'Roboto Mono', sans-serif;
 }
 
 .header {
@@ -32,7 +41,7 @@ body {
   margin-right: 10px;
   position: absolute;
   overflow-y: scroll;
-  max-height: 24vh;
+  height: 25vh;
 }
 
 .gif-container{
@@ -47,16 +56,13 @@ body {
   margin-right: 10px;
   margin-top: 10px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .gif-div {
   width: 200px;
   margin: 20px;
   display: inline-block;
-}
-
-.gif-button{
-  cursor: pointer;
 }
 
 #bot2 {
@@ -79,10 +85,25 @@ body {
   text-align: right;
   padding-right: 20px;
   position: absolute;
-  bottom: -60px;
+  bottom: -20px;
   right: 0;
   font-family: 'Bowlby One SC', serif;
   font-size: 175px;
+  cursor: pointer;
+}
+
+#info{
+  color: white;
+  opacity: .75;
+  position: absolute;
+  bottom: 50px;
+  left: 460px;
+  font-size: 75px;
+  cursor: pointer;
+}
+
+#info:hover{
+  opacity: .9;
 }
 
 form input[type=text] {
@@ -104,4 +125,181 @@ form button {
   border-radius: 50%;
   margin-left: 3px;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1448px) {
+  .header {
+    height: 20vh
+  }
+  
+  .under-header {
+    height: 20vh;
+  }
+  
+  .gif-container{
+    max-width: 900px;
+  }
+  
+  #bot2 {
+    width: 200px;
+  }
+  
+  #header-text{
+    font-size: 160px;
+    right: 60px;
+  }
+  
+  #info{
+    bottom: 20px;
+  }
+  
+  form input[type=text] {
+    width: 200px;
+    margin-left: 95px;
+  }
+}
+
+
+@media only screen and (max-width: 1260px) {
+  #info{
+    left: 380px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .header {
+    height: 20vh;
+  }
+  
+  .under-header {
+    height: 30vh;
+  }
+  
+  #bot2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
+  }
+
+  #header-text{
+    text-align: center;
+    position: relative;
+    padding-right: 0;
+    bottom: 0;
+    left: 0;
+    top: 15px;
+  }
+  
+  #info{
+    bottom: 100px;
+    left: 220px;
+  }
+  
+  form input[type=text] {
+    width: 70%;
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .under-header{
+    height: 30vh;
+  }
+
+  #bot2 {
+    width: 150px;
+  }
+  
+  #info{
+    bottom: 80px;
+    left: 220px;
+  }
+  
+  form input[type=text] {
+    margin-left: 15px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header{
+    height: 17vh;
+  }
+
+  .gif-container{
+    width: 500px;
+  }
+
+  .gif-div{
+    width: 110px;
+  }
+
+  .gif{
+    width: 100px;
+    margin: 5px;
+  }
+  
+  #bot2 {
+    width: 100px;
+    padding: 10px;
+  }
+  
+  #header-text{
+    font-size: 100px;
+  }
+  
+  #info{
+    left: 160px;
+    bottom: 70px;
+  }
+  
+  form input[type=text] {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header {
+    height: 15vh;
+  }
+  
+  .gif-container{
+
+  }
+  
+  .gif-button {
+
+  }
+  
+  .gif-div {
+ 
+  }
+  
+  #bot2 {
+
+  }
+  
+  #botlink {
+
+  }
+  
+  #header-text{
+
+  }
+  
+  #info{
+
+  }
+  
+  #info:hover{
+
+  }
+  
+  form input[type=text] {
+
+  }
+  
+  form button {
+
+  }
 }
