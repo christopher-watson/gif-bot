@@ -81,7 +81,7 @@ function animate() {
 
 function robotInvasion() {
   var queryURL =
-    "https://api.giphy.com/v1/gifs/search?api_key=GqKuRbnmfbn5LwTnRvQ5T03JwiVXXF7y&q=robot_invasion";
+    "https://api.giphy.com/v1/gifs/search?api_key=GqKuRbnmfbn5LwTnRvQ5T03JwiVXXF7y&q=robot-invasion";
     
 
   $.ajax({
